@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing for VESTA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slidedown.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my responsive web page!</h1>
+        <h4>Made By Fei</h4>
+    </header>
+    <nav>
+        <ul class="">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Shop</li></a>
+            <a href="#"><li>Gallery</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+        <div class="handle">Menu</div>
+    </nav>
+    <div class="first">
+        <img src="pic/rabbit.jpg" onclick="smoothScroll(document.getElementById('second'))" >
+        
+        <div id="container">
+        <div class="span4 blue">
+            <img src="pic/cat.jpg">
+            <div class="overlay">
+                <span>Text1</span>
+                <button>Button1</button>
+            </div>
+        </div>
+    <div class="span4 blue">
+            <img src="pic/cat.jpg">
+            <div class="overlay">
+                <span>Text2</span>
+                <button>Button2</button>
+            </div>
+        </div>
+    <div class="span4 blue">
+            <img src="pic/cat.jpg">
+            <div class="overlay">
+                <span>Text3</span>
+                <button>Button3</button>
+            </div>
+        </div>
+    <div class="span4 blue">
+            <img src="pic/cat.jpg">
+            <div class="overlay">
+                <span>Text4</span>
+                <button>Button4</button>
+            </div>
+        </div>
+</div>
+
+    </div>
+
+    <div class="second" id="second">
+        <img src="pic/2.jpg" >
+    </div>
+    <script>
+        $(".handle").on("click", function(){
+            $('nav ul').toggleClass('showing');
+        });
+    </script>
+</body>
+</html>
